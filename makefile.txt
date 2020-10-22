@@ -1,0 +1,6 @@
+project: main.o spm.o
+	gcc -o main.o spm.o
+main.o: main.c spm.h
+	gcc -c main.c
+spm.o: spm.c spm.h
+	gcc -c spm.c
